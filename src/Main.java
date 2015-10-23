@@ -15,10 +15,11 @@ public class Main {
     }
 
     static public void testPrintGaps () {
-        PrintGaps.printGaps(new int[]{1}, 99);
-        PrintGaps.printGaps(new int[]{1,2,5,99}, 99);
-        PrintGaps.printGaps(new int[]{2,55,98}, 99);
-        PrintGaps.printGaps(new int[]{3,55,56,58,97}, 99);
+        PrintGaps.printGaps(new int[]{1}, 99); //2-99
+        PrintGaps.printGaps(new int[]{1,2,5,99}, 99); //3-4,6-98
+        PrintGaps.printGaps(new int[]{2,55,98}, 99); //1,3-54,56-97,99
+        PrintGaps.printGaps(new int[]{3,55,56,58,97}, 99); //1-2,4-54,57,59-96,98-99
+        PrintGaps.printGaps(new int[]{1,2,3}, 3); // ""
     }
 
     static void testAnagram(){
