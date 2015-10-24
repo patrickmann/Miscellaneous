@@ -11,7 +11,22 @@ public class Main {
         //testSumPairs();
         //testIsland();
         //testAnagram();
-        testPrintGaps();
+        //testPrintGaps();
+        testSubSort();
+    }
+
+    static void testSubSort(){
+        int[]a1 = {2,1};
+        int[]a2 = {1,3,2};
+        int[]a3 = {2,1,3};
+        int[]a4 = {4,5,1,2,3,8,9};
+        int[]a5 = {1,2,3,8,9,5,4};
+
+        SubSort.subSort(a1);
+        SubSort.subSort(a2);
+        SubSort.subSort(a3);
+        SubSort.subSort(a4);
+        SubSort.subSort(a5);
     }
 
     static public void testPrintGaps () {
