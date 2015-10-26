@@ -2,9 +2,11 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 /**
- * Sort a string list such that anagrams are next to each other
+ * Re-order a string list such that anagrams are next to each other.
+ * No specific sort order is required for the anagrams or groups of anagrams.
  */
 public class Anagram {
+    // Use a simple HashMap rather than TreeMap, since no sorting of keys required
     private static Map<String, List<String>> map = new HashMap<String, List<String>>();
 
     static void buildMap(String[] array) {
@@ -27,8 +29,9 @@ public class Anagram {
     }
 
     public static String[] sort(String[] array) {
-        int i=0;
         buildMap(array);
+
+        int i=0;
         for (String key: map.keySet()) {
             List<String> list = map.get(key);
             for (String value: list) {

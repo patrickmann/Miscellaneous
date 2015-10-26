@@ -4,7 +4,7 @@ import ProducerConsumer.Producer;
 
 public class Main {
     public static void main (String[] args) {
-        //testProducerConsumer();
+        testProducerConsumer();
         //Join.runJoin();
         //testFindSubstring();
         //testSortAlternating();
@@ -12,7 +12,7 @@ public class Main {
         //testIsland();
         //testAnagram();
         //testPrintGaps();
-        testSubSort();
+        //testSubSort();
     }
 
     static void testSubSort(){
@@ -38,7 +38,7 @@ public class Main {
     }
 
     static void testAnagram(){
-        String[] l = {"abc", "def", "aba", "cba", "baa"};
+        String[] l = {"def", "abc", "aba", "cba", "baa"};
         Anagram.print(Anagram.sort(l));
     }
 

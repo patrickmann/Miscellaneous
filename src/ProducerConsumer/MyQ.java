@@ -1,5 +1,7 @@
 package ProducerConsumer;
 
+// Simple data structure to provide mutually exclusive access.
+// Normally you'd use BlockingQueue for this kind of thing.
 public class MyQ {
     boolean empty = true;
     int data;
