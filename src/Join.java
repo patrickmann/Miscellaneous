@@ -17,7 +17,7 @@ public class Join {
                 try {
                     waitFor.join();
                 } catch (InterruptedException e) {
-                    System.out.println(name + " interruped while waiting");
+                    System.out.println(name + " interrupted while waiting");
                 }
             System.out.println(name);
         }

@@ -9,7 +9,7 @@ import java.util.Set;
 public class LongestSubstring {
     static public void find(String str) {
         char[] array = str.toCharArray();
-        Set<Character> charset = new HashSet<>();
+        Set<Character> charset = new HashSet<>(); // set of unique chars in the current sequence
         int max = 1;
         int first = 0;
         int last = 0;

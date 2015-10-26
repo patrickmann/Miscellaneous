@@ -4,11 +4,12 @@ import ProducerConsumer.Producer;
 
 public class Main {
     public static void main (String[] args) {
-        testProducerConsumer();
+        //foo.test();
+        //testProducerConsumer();
         //Join.runJoin();
         //testFindSubstring();
         //testSortAlternating();
-        //testSumPairs();
+        testSumPairs();
         //testIsland();
         //testAnagram();
         //testPrintGaps();
@@ -67,7 +68,9 @@ public class Main {
     static void testSumPairs(){
         int[] a1 = {1,2,3,4,5};
         SumPairs.printPairs(a1, 5);
-        SumPairs.printPairsWithDupes(a1, 5);
+
+        int[] a2 = {1,2,3,4,5,1,2,3,4,5};
+        SumPairs.printPairsWithDupes(a2, 5);
     }
 
     static void testSortAlternating() {

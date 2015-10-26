@@ -3,8 +3,11 @@ import java.util.HashSet;
 import java.util.Map;
 
 /**
- * Find all pairs of integers within an array which sum to a specified value.
- * Solution 1 assumes no duplicates.
+ * Find all pairs of integers within an array which sum to a specified value V.
+ * Solution 1 assumes no duplicates:
+ *    add all elements to a set
+ *    while adding x, check for y=V-x
+ *    if it exists, print (x,y) and remove y from set (so we only print each pair once)
  *
  * Extending this to n:
  *    for each number in set
@@ -27,7 +30,7 @@ public class SumPairs {
     /**
      * Solution 2 handles duplicates
      */
-    static void printPairsWithDupes(int[] numbers, int sum) {
+    private static Map<Integer, Integer> buildMap(int[] numbers) {
         // Add all array elements to a map, with number of occurrences as value
         Map<Integer, Integer> map = new HashMap<>();
         for (int e : numbers) {
@@ -36,6 +39,12 @@ public class SumPairs {
                 map.put(e, value + 1);
             } else map.put(e, 1);
         }
+        return map;
+    }
+
+    static void printPairsWithDupes(int[] numbers, int sum) {
+        Map<Integer, Integer> map;
+        map = buildMap(numbers);
 
         // For each entry, check for complement and consume available instances
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {

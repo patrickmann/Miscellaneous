@@ -42,7 +42,6 @@ public class Islands {
         return true;
     }
 
-
     static void testCountIslands(char[][] map, int expected) {
         if (countIslands(map) != expected)
             System.out.println("Fail");
