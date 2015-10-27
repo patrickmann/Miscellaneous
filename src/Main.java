@@ -2,6 +2,8 @@ import ProducerConsumer.Consumer;
 import ProducerConsumer.MyQ;
 import ProducerConsumer.Producer;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main (String[] args) {
         //foo.test();
@@ -9,11 +11,30 @@ public class Main {
         //Join.runJoin();
         //testFindSubstring();
         //testSortAlternating();
-        testSumPairs();
+        //testSumPairs();
         //testIsland();
         //testAnagram();
         //testPrintGaps();
         //testSubSort();
+        testLongAddition();
+    }
+
+    static void testLongAddition() {
+        int[] a1 = {0};
+        int[] a2 = {1};
+        int[] a3 = {0};
+        int[] a4 = {1};
+        int[] a5 = {9};
+        int[] a6 = {9,9};
+        int[] a7 = {5,5,5};
+        System.out.println(Arrays.toString(a1) + " " + Arrays.toString(LongAddition.add(a1, false)));
+        System.out.println(Arrays.toString(a2) + " " + Arrays.toString(LongAddition.add(a2, false)));
+        System.out.println("-" + Arrays.toString(a3) + " " + Arrays.toString(LongAddition.add(a3, true)));
+        System.out.println("-" + Arrays.toString(a4) + " " + Arrays.toString(LongAddition.add(a4, true)));
+        System.out.println(Arrays.toString(a5) + " " + Arrays.toString(LongAddition.add(a5, false)));
+        System.out.println(Arrays.toString(a6) + " " + Arrays.toString(LongAddition.add(a6, false)));
+        System.out.println(Arrays.toString(a7) + " " + Arrays.toString(LongAddition.add(a7, false)));
+        System.out.println("-" + Arrays.toString(a7) + " " + Arrays.toString(LongAddition.add(a7, true)));
     }
 
     static void testSubSort(){
