@@ -27,6 +27,7 @@ public class Main {
         int[] a5 = {9};
         int[] a6 = {9,9};
         int[] a7 = {5,5,5};
+        int[] a8 = {1,0};
         System.out.println(Arrays.toString(a1) + " " + Arrays.toString(LongAddition.add(a1, false)));
         System.out.println(Arrays.toString(a2) + " " + Arrays.toString(LongAddition.add(a2, false)));
         System.out.println("-" + Arrays.toString(a3) + " " + Arrays.toString(LongAddition.add(a3, true)));
@@ -35,6 +36,7 @@ public class Main {
         System.out.println(Arrays.toString(a6) + " " + Arrays.toString(LongAddition.add(a6, false)));
         System.out.println(Arrays.toString(a7) + " " + Arrays.toString(LongAddition.add(a7, false)));
         System.out.println("-" + Arrays.toString(a7) + " " + Arrays.toString(LongAddition.add(a7, true)));
+        System.out.println("-" + Arrays.toString(a8) + " " + Arrays.toString(LongAddition.add(a8, true)));
     }
 
     static void testSubSort(){
