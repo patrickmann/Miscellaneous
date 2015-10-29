@@ -20,10 +20,7 @@ public class LongAddition {
 
         // -000... - 1 special case
         if (neg && allEqual(num, 0)) {
-            int[] newArray = new int[Math.max(num.length-1, 1)];
-            for (int i=0; i<newArray.length; i++)
-                newArray[i] = 1;
-            return newArray;
+            return new int[]{1};
         }
 
         int carry = neg ? -1 : 1;
