@@ -16,7 +16,19 @@ public class Main {
         //testAnagram();
         //testPrintGaps();
         //testSubSort();
-        testLongAddition();
+        //testLongAddition();
+        testNthLast();
+    }
+
+    static void testNthLast () {
+        NthLast.Node head = NthLast.buildList(5);
+        NthLast.check(head,0,0);
+        NthLast.check(head,1,1);
+        NthLast.check(head,4,4);
+        NthLast.check(head,5,-1);
+
+        head = NthLast.buildList(1);
+        NthLast.check(head,0,0);
     }
 
     static void testLongAddition() {
