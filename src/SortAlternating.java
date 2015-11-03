@@ -5,7 +5,7 @@
  */
 public class SortAlternating {
     public static void sort(int[] array) {
-        printArray(array);
+        Utils.printArray(array);
         boolean sorted = false;
         while (!sorted) {
             sorted = true;
@@ -13,31 +13,18 @@ public class SortAlternating {
                 if (i%2 == 0) {
                     //even < odd
                     if (array[i] > array[i+1]) {
-                        swap(array, i, i+1);
+                        Utils.swap(array, i, i+1);
                         sorted = false;
                     }
                 } else {
                     //odd > even
                     if (array[i] < array[i+1]) {
-                        swap(array, i, i+1);
+                        Utils.swap(array, i, i+1);
                         sorted = false;
                     }
                 }
             }
         }
-        printArray(array);
-    }
-
-    static void printArray(int[] a) {
-        for (int d: a) {
-            System.out.print(d + " ");
-        }
-        System.out.println();
-    }
-
-    static void swap(int[] array, int i, int j) {
-        int tmp = array[i];
-        array[i] = array[j];
-        array[j] = tmp;
+        Utils.printArray(array);
     }
 }

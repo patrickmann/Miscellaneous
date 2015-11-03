@@ -17,7 +17,32 @@ public class Main {
         //testPrintGaps();
         //testSubSort();
         //testLongAddition();
-        testNthLast();
+        //testNthLast();
+        testDutchFlag();
+    }
+
+    public static void testDutchFlag () {
+        testDutchFlag(new int[]{1,2,3,1,2,3}, 0);
+        testDutchFlag(new int[]{1,2,3,1,2,3}, 1);
+        testDutchFlag(new int[]{1,2,3,1,2,3}, 2);
+        testDutchFlag(new int[]{1,1}, 0);
+        testDutchFlag(new int[]{1,1}, 1);
+        testDutchFlag(new int[]{2,1,1}, 0);
+        testDutchFlag(new int[]{2,1,1}, 1);
+        testDutchFlag(new int[]{1,2,1,2,1,2}, 0);
+        testDutchFlag(new int[]{1,2,1,2,1,2}, 1);
+        testDutchFlag(new int[]{1,2,3,1,2,3}, 0);
+        testDutchFlag(new int[]{1,2,3,1,2,3}, 1);
+        testDutchFlag(new int[]{1,2,3,1,2,3}, 2);
+        testDutchFlag(new int[]{1,2,1,3,1,4,2,3,2,1}, 1);
+    }
+
+    public static void testDutchFlag (int[] a, int pivotIndex) {
+        Utils.printArray (a);
+        System.out.print(" pivotIndex=" + pivotIndex + ": ");
+        DutchFlag.partition(a, pivotIndex);
+        Utils.printArray (a);
+        System.out.println();
     }
 
     static void testNthLast () {
