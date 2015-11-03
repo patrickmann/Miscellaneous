@@ -42,9 +42,5 @@ public class Anagram {
         return array;
     }
 
-    public static void print(String[] array) {
-        for (String s: array)
-            System.out.print(s+" ");
-        System.out.println();
-    }
+
 }

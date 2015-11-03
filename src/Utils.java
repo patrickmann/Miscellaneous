@@ -18,6 +18,12 @@ public class Utils {
         System.out.print("]");
     }
 
+    public static void printArray(String[] array) {
+        for (String s: array)
+            System.out.print(s+" ");
+        System.out.println();
+    }
+
     static void swap(int[] array, int i, int j) {
         int tmp = array[i];
         array[i] = array[j];

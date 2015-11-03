@@ -16,9 +16,9 @@ public class Main {
         //testAnagram();
         //testPrintGaps();
         //testSubSort();
-        //testLongAddition();
+        testLongAddition();
         //testNthLast();
-        testDutchFlag();
+        //testDutchFlag();
     }
 
     public static void testDutchFlag () {
@@ -94,7 +94,7 @@ public class Main {
 
     static void testAnagram(){
         String[] l = {"def", "abc", "aba", "cba", "baa"};
-        Anagram.print(Anagram.sort(l));
+        Utils.printArray(Anagram.sort(l));
     }
 
     static void testIsland() {

@@ -27,7 +27,7 @@ public class LongAddition {
         }
 
         int carry = neg ? -1 : 1;
-        for (int i = num.length - 1; i >= 0; i--) {
+        for (int i = num.length - 1; i >= 0 && carry != 0; i--) {
             carry = addDigit(num, i, carry, neg);
         }
 
