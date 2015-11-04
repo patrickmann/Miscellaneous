@@ -1,3 +1,4 @@
+import Interleave.*;
 import ProducerConsumer.Consumer;
 import ProducerConsumer.MyQ;
 import ProducerConsumer.Producer;
@@ -16,9 +17,18 @@ public class Main {
         //testAnagram();
         //testPrintGaps();
         //testSubSort();
-        testLongAddition();
+        //testLongAddition();
         //testNthLast();
         //testDutchFlag();
+        testInterleave();
+    }
+
+    public static void testInterleave () {
+        Interleave ctr = new Interleave();
+        Thread t1 = new PrintInterleave(ctr, 20, true, "A");
+        Thread t2 = new PrintInterleave(ctr, 20, false, "B");
+        t1.start();
+        t2.start();
     }
 
     public static void testDutchFlag () {
