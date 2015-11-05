@@ -20,7 +20,17 @@ public class Main {
         //testLongAddition();
         //testNthLast();
         //testDutchFlag();
-        testInterleave();
+        //testInterleave();
+        testArrayIntersection();
+    }
+
+    public static void testArrayIntersection () {
+        ArrayIntersection.testArrayIntersection(new int[]{1,2,3}, new int[]{2,3,4}, new int[]{2,3});
+        ArrayIntersection.testArrayIntersection(new int[]{1,2,3}, new int[]{4,5,6}, new int[]{});
+        ArrayIntersection.testArrayIntersection(new int[]{1}, new int[]{2}, new int[]{});
+        ArrayIntersection.testArrayIntersection(new int[]{1}, new int[]{1}, new int[]{1});
+        ArrayIntersection.testArrayIntersection(new int[]{1,2,3,3,3}, new int[]{3,3,3}, new int[]{3});
+        ArrayIntersection.testArrayIntersection(new int[]{1,1,1,2,3,4,5}, new int[]{1,3,3,3,5,6,7,8}, new int[]{1,3,5});
     }
 
     public static void testInterleave () {
