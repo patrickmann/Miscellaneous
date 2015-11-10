@@ -21,7 +21,19 @@ public class Main {
         //testNthLast();
         //testDutchFlag();
         //testInterleave();
-        testArrayIntersection();
+        //testArrayIntersection();
+        testPermuteString();
+    }
+
+    public static void testPermuteString() {
+        testPermuteString("a");
+        testPermuteString("ab");
+        testPermuteString("abc");
+    }
+
+    public static void testPermuteString(String s){
+        System.out.println(s + ": ");
+        Utils.printList(PermuteString.permute(s));
     }
 
     public static void testArrayIntersection () {

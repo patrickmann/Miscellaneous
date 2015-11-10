@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class Utils {
     static void printArray(int[] a) {
@@ -22,6 +23,11 @@ public class Utils {
         for (String s: array)
             System.out.print(s+" ");
         System.out.println();
+    }
+
+    public static void printList(List<String> l) {
+        String[] a = new String[l.size()];
+        printArray(l.toArray(a));
     }
 
     static void swap(int[] array, int i, int j) {
